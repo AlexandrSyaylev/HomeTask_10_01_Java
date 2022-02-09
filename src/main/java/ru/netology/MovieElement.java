@@ -11,8 +11,10 @@ public class MovieElement {
         this.id = id;
         this.name = name;
         this.genre = genre;
-        this.imageUrl= imageUrl;
+        this.imageUrl = imageUrl;
         this.exclusive = exclusive;
-    };
+    }
+
+    ;
 }
 
