@@ -15,6 +15,5 @@ public class MovieElement {
         this.exclusive = exclusive;
     }
 
-    ;
 }
 

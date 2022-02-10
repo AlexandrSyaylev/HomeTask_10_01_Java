@@ -21,15 +21,12 @@ public class PosterManager {
         return poster;
     }
 
-    public MovieElement[] getLimitReverse(int countOnPage) {
+    public MovieElement[] getLimitReverse() {
         int resultLength = 0;
-        if (countOnPage <= limitOnPage) {
-            resultLength = countOnPage;
+        if (poster.length <= limitOnPage) { //если у нас элементов меньше или столько же, что и  лимит на странице
+            resultLength = poster.length; // вывести все элементы
         } else {
-            resultLength = limitOnPage;
-        }
-        if (resultLength < poster.length) {
-            resultLength = poster.length;
+            resultLength = limitOnPage; // а если больше - вывести только лимит
         }
         MovieElement[] result = new MovieElement[resultLength];
         for (int i = 0; i < resultLength; i++) {
