@@ -38,8 +38,6 @@ public class PosterManager {
     public PosterManager() {
     }
 
-    ;
-
     public PosterManager(int limitOnPage) {
         this.limitOnPage = limitOnPage;
     }
